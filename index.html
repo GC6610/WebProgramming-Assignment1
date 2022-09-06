@@ -11,6 +11,34 @@
 <style>
 h1 {text-align: center;}
 h2 {text-align: center;}
+img {
+  float: right;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  font: Arial;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 650px) {
+  body {
+    display: block;
+    font-size: 80%;
+  }
+  p {
+    position: relative;
+    padding: 1rem;
+    background: rgba(white, 0.8);
+  }
+}
+
+
 </style>
 
 <body>
@@ -37,10 +65,33 @@ h2 {text-align: center;}
         </div>
     </nav>
 
-    <div class="col-lg-8">
-        <h1>Finance Management System</h1>
-        <h2>Description</h2>
+    <div class="heading">
+        <h1>Finance Management System</h1>        
     </div>
+    <div class="grid">
+    <p>
+        Tracking your spending is often the first step in getting your finances in order. By understanding what you spend money on and how much you spend, you can see exactly where your cash is going and areas where you can cut back.
+        This web-application will enable you to Log-In to your personalised account that keeps track of all the expenditures that you have made so far. This will assist you to know where, how much and how often you have spent for something.
+    </p>
+
+    <img src='image.png' width="450" alt=''>
+
+    <img src='image2.png' width="450" alt=''>
+ 
+        <ul>
+            <li>Login for existing users to access their personalised expenses tracker</li>
+            <li>Sign Up feature to enable new users to create accounts</li>
+            <li>A comprehensive expense list that details all the things that a user has spent on</li>
+            <li>Daily, Weekly, Monthly and Yearly reports to compare expenses across each date range</li>
+            <li>Tags to segregate different types of expenditures</li>
+            <li>Show if the user owes any money to another person</li>
+            <li>Colourful interactive charts to depict the expenses</li>
+            <li>Resources on how to manage funds</li>
+          </ul>
+    
+
+    </div>
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
